@@ -3,13 +3,16 @@
     <head>
         <title>Payment</title>
         <style>
-            .body{
+            body{
                 height: 100%;
                 width: 100%;
+                margin: 0%;
+                background-color: #e0e0e0;
             }
             .header-div{
                 height: 100%;
                 width: 100%;
+                background-color: rosybrown;
             }
             .content-div{
                 height: 100%;
@@ -18,6 +21,7 @@
             .footer-div{
                 height: 100%;
                 width: 100%;
+                background-color: rosybrown;
             }
             #logo{
                 height: 60px;
@@ -39,7 +43,26 @@
                 height: 20px;
                 width: 22px;
             }
-
+            .first-div-for-content-of-payment-page{
+                width: 50%;
+                height: 20%;
+                background-color: rgb(132,136,139);
+                margin-top: 2%;
+                margin-bottom: 2%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .second-div-for-content-of-payment-page{
+                margin: 2%;
+            }
+            #tariff-box{
+                border: 1px solid black;
+                border-radius: 5px;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
         </style>
     </head>
     <div class="body">
@@ -70,11 +93,16 @@
                             <b>Number of Adults: </b> 2 <br><br>
                             <b>Check-in Date: </b> 06/06/2020 <br><br>
                             <b>Check-out Date: </b> 08/06/2020 <br><br>
-                            <b>Tariff Breakdown: </b> Rs.1000 x 2 Adults x 5 Nights <br><br>
-                            <b>Total Amount: </b> Rs.10000 <br><br>
+
+                            <div id="tariff-box">
+                                <b>Tariff Breakdown: </b> Rs.1000 x 2 Adults x 5 Nights <br><br>
+                                <b>Total Amount: </b> Rs.10000 <br><br>    
+                            </div>
+                    
                         </p>
+                    </div>
                         <a href="payment.html">Pay Now</a>
-                        </div>
+                        
                 </div>
 
                 <footer>
