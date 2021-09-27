@@ -19,37 +19,48 @@
                 height: 100%;
                 width: 100%;
                 background-color: rosybrown;
+                display: flex;
+                justify-content: space-between;
             }
             #login-link{
                 float: right;
-                padding: 22px 16px;
+                padding: 22px 40px;
             }
             .content-div{
                 height: 100%;
                 width: 95%;
                 margin-top: 2%;
                 margin-left: 4%;
+                display: flex;
             }
             .footer-div{
-                height: 100%;
+                height: 60px;
                 width: 100%;
                 background-color: rosybrown;
-            }
-            #social-media-link{
-                float: right;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
             #contact-us-link{
-                float: left;
-                padding-left: 1%;
-                padding-top: 18px;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 2%;
+    
             }
             #copyright{
-                text-align: center;
+                display: flex;
+                padding-left: 30%;
+                
                 size: 8px;
+            }
+            #social-media-link{
+                display: flex;
+                padding-left: 30%;
             }
             #logo{
                 height: 60px;
                 width: 60px;
+                padding-left: 20px;
             }
             #Radisson-Blu-Hotel-Image{
                 width: 500px;
@@ -93,25 +104,30 @@
             
             <div class="content-div">
                 <div>
-                       <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="Radisson-Blu-Hotel-Image" alt="Radisson Blu Hotel Image"><br>
-                        <form action="payment.html" autocomplete="off">
-                            <label for="no-of-adults">Adults: </label>
-                            <input type="number" id="no-of-adults" min="1" max="50"  placeholder="1">
-                            <br>
-                            <label for="name">Name: </label>
-                            <input type="text" required id="name">
-                            <br>
-                            <label for="from-date">From Date: </label>
-                            <input type="date" required id="from-date">
-                            <br>
-                            <label for="from-date">From Date: </label>
-                            <input type="date" required id="from-date">
-                            <br>
-                            <label for="total">Total: </label>
-                            <input type="text" required id="total" disabled>
-                            <br>
-                            <button>Book Now</button>
-                        </form>
+                    <div id="box1">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="Radisson-Blu-Hotel-Image" alt="Radisson Blu Hotel Image">
+                    </div>
+                       <div id="box2">
+                            <form action="payment.html" autocomplete="off">
+                                <label for="no-of-adults">Adults: </label>
+                                <input type="number" id="no-of-adults" min="1" max="50"  placeholder="1">
+                                <br>
+                                <label for="name">Name: </label>
+                                <input type="text" required id="name">
+                                <br>
+                                <label for="from-date">From Date: </label>
+                                <input type="date" required id="from-date">
+                                <br>
+                                <label for="from-date">From Date: </label>
+                                <input type="date" required id="from-date">
+                                <br>
+                                <label for="total">Total: </label>
+                                <input type="text" required id="total" disabled>
+                                <br>
+                                <button>Book Now</button>
+                            </form>
+                       </div>
+                        
 
                         <div id="description"></div>
                             <h2>Radisson Blu Hotel</h2>
@@ -136,6 +152,7 @@
                 <div class="footer-div">
                     <a href="contact.html" id="contact-us-link">Contact Us</a>
                     <br>
+                    <div id="copyright">&#169 2020 ROOM SEARCH PVT. LTD.</div>
                     <div id="social-media-link">
                         <a href="https://www.facebook.com/" target="_blank">
                             <img src="/Hotel-Booking Project/assests/images/facebook.png" alt="facebook logo" id="facebook-logo" height="22px" width="20px">
@@ -148,7 +165,7 @@
                         </a>
                     </div>
                     <br>
-                    <div id="copyright">&#169 2020 ROOM SEARCH PVT. LTD.</div>
+                    
                 </div>
             </footer>
         </body>

@@ -19,50 +19,59 @@
                 height: 100%;
                 width: 100%;
                 background-color: rosybrown;
+                display: flex;
+                justify-content: space-between;
             }
             #login-link{
                 float: right;
-                padding: 22px 16px;
+                padding: 22px 40px;
             }
             .content-div{
                 height: 100%;
                 width: 100%;   
-                /* margin: 2%;              */
             }
 
             .footer-div{
-                height: 100%;
+                height: 60px;
                 width: 100%;
                 background-color: rosybrown;
-            }
-            #social-media-link{
-                float: right;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
             #contact-us-link{
-                float: left;
-                padding-left: 1%;
-                padding-top: 18px;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 2%;
+    
             }
             #copyright{
-                text-align: center;
+                display: flex;
+                padding-left: 30%;
+                
                 size: 8px;
+            }
+            #social-media-link{
+                display: flex;
+                padding-left: 30%;
             }
             #logo{
                 height: 60px;
                 width: 60px;
+                padding-left: 20px;
             }
             .first-hotel-image{
                 width: 40%;
-                background-color: rgb(132,136,139);
+                background-color:lightgray;
             }
             .second-hotel-image{
                 width: 40%;
-                background-color: rgb(132,136,139);
+                background-color: lightgray;
             }
             .third-hotel-image{
                 height: 328px;
                 width: 42%;
-                background-color: rgb(132,136,139);
+                background-color:lightgray
             }
             #first-image{
                 height: 200px;
@@ -158,7 +167,7 @@
                         </div>
                         <div class="second-hotel-image">
                             <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="Lalit New Delhi Image" id="second-image">
-                            <p>The Lalit New Delhi</p>
+                            <h3>The Lalit New Delhi</h3>
                             <p>4.5 Star</p>
                             <p>New Delhi</p>
                         </div>
@@ -166,7 +175,7 @@
                     <div class="flex-display2">
                         <div class="third-hotel-image">
                             <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace Image" id="third-image">
-                            <p>Taj Palace</p>
+                            <h3>Taj Palace</h3>
                             <p>4 Star</p>
                             <p>New Delhi</p>
                         </div>
@@ -181,12 +190,14 @@
                 </div>
 
             </div>
-
+<br><br><br><br>
             
             <footer>
                 <div class="footer-div">
                     <a href="contact.html" id="contact-us-link">Contact Us</a>
                     <br>
+                    <div id="copyright">&#169 2020 ROOM SEARCH PVT. LTD.</div>
+                    
                     <div id="social-media-link">
                         <a href="https://www.facebook.com/" target="_blank">
                             <img src="/Hotel-Booking Project/assests/images/facebook.png" alt="facebook logo" id="facebook-logo" height="22px" width="20px">
@@ -199,7 +210,7 @@
                         </a>
                     </div>
                     <br>
-                    <div id="copyright">&#169 2020 ROOM SEARCH PVT. LTD.</div>
+                    
                 </div>
             </footer>
             
