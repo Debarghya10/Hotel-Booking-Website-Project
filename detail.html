@@ -3,6 +3,7 @@
     <head>
         <title>Detail</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <style>
             body{
                 height: 100%;
@@ -93,13 +94,41 @@
             <article>
                 <header>
                     <div class="header-div">
-                        <a href="index.html">
-                            <img src="/Hotel-Booking Project/assests/images/logo.png" id="logo" height=150px width="200px" alt="logo">
+                        <div id="logo-div" style="margin-left: 1%;"> <img src="/Hotel-Booking Project/assests/images/logo.png" id="logo" height=150px width="200px" alt="logo"> </div>
+                        
+                        <div id="login-div">
+                             <a id="login-link">
+                                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal" id="login-button">
+                                    LOGIN
+                                </button>
                             </a>
-                        <a href="login.html" target="_blank" id="login-link" >Login</a>
+                        </div>
                     </div>
                 </header>
+                <!-- <div class="modal fade" id="login-modal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Please Login</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               <form>
+                                   <label for="example-input-email">Username:</label>
+                                   <input type="email" class="form-control" id="example-input-email" placeholder="Enter Username"/>
+                                   <label for="example-input-password">Password:</label>
+                                   <input type="password" class="form-control" id="example-input-password" placeholder="Enter Password"/>
+                               </form>
+                            </div>
+                            <div class="modal-footer">
+                               <button type="button" class="btn btn-primary" style="margin-right: 45%;" >Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </article>
+            
+
 
             
             <div class="content-div">

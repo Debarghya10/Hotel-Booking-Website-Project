@@ -3,6 +3,10 @@
     <head>
         <title>Payment</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            
         <style>
             body{
                 height: 100%;
@@ -106,13 +110,40 @@
             <article>
                 <header>
                     <div class="header-div">
-                            <a href="index.html">
-                            <img src="/Hotel-Booking Project/assests/images/logo.png" id="logo" height=150px width="200px" alt="logo">
+                        <div id="logo-div" style="margin-left: 1%;"> <img src="/Hotel-Booking Project/assests/images/logo.png" id="logo" height=150px width="200px" alt="logo"> </div>
+                        
+                        <div id="login-div">
+                            
+                             <a id="login-link">
+                                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#login-modal" id="login-button">
+                                    LOGIN
+                                </button>
                             </a>
-                            <a href="login.html" target="_blank"id="login-link"  >Login</a>
                         </div>
+                    </div>
                 </header>
             </article>
+            <div class="modal fade" id="login-modal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Please Login</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <form>
+                               <label for="example-input-email">Username:</label>
+                               <input type="email" class="form-control" id="example-input-email" placeholder="Enter Username"/>
+                               <label for="example-input-password">Password:</label>
+                               <input type="password" class="form-control" id="example-input-password" placeholder="Enter Password"/>
+                           </form>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-primary" style="margin-right: 45%;" >Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
 
             <div class="content-div">
@@ -140,9 +171,42 @@
                     </div>
             </div>
             <br><br><br><br>
-                <footer>
-                    <div class="footer-div">
-                        <a href="contact.html" id="contact-us-link">Contact Us</a>
+
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="contactModalLabel">Get in touch</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Thanking for reaching out!!! <br>
+                            Please enter your email and we will get back to you.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            <footer>
+                <div class="footer-div">
+                    <div id="contact-us-link" >
+                        <a>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                Contact Us
+                              </button>
+                            
+                        </a>
+                    </div>
+                    
+
+                        <br>
+                        <div id="copyright">&#169 2020 ROOM SEARCH PVT. LTD.</div>
                         <br>
                         <div id="social-media-link">
                             <a href="https://www.facebook.com/" target="_blank">
@@ -154,9 +218,7 @@
                             <a href="https://www.twitter.com/" target="_blank">
                                 <img src="/Hotel-Booking Project/assests/images/twitter.png" alt="twitter logo" id="twitter-logo" height="22px" width="20px">
                             </a>
-                        </div>
-                        <br>
-                        <div id="copyright">&#169 2020 ROOM SEARCH PVT. LTD.</div>
+                        </div>                        
                     </div>
                 </footer>
         </body>
